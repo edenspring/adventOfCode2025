@@ -2,6 +2,7 @@ package main
 
 import (
 	"adventOfCode2025/day01"
+	"adventOfCode2025/day02"
 	"fmt"
 	"strconv"
 )
@@ -41,6 +42,8 @@ func solutionStringBuilder(solution string) string {
 }
 
 func main() {
+
+	// Day 01
 	day01String := dayStringBuider("01")
 	day01Solve := day01.SolveDay01()
 	day01SolveStr := strconv.Itoa(day01Solve)
@@ -53,4 +56,21 @@ func main() {
 	day01PartTwoOutput := solutionStringBuilder(day01SolvePartTwoStr)
 	fmt.Println(day01StringPartTwo)
 	fmt.Println(day01PartTwoOutput)
+
+	// Day 02
+	day02String := dayStringBuider("02")
+	day02Solve := day02.SolveDay02()
+	day02SolveStr := strconv.Itoa(day02Solve)
+	day02Output := solutionStringBuilder(day02SolveStr)
+	fmt.Println(day02String)
+	fmt.Println(day02Output)
+	// Day 02 -- Part Two
+	day02StringPartTwo := dayStringBuilderPtTwo("02")
+	day02SolvePartTwo := day02.SolveDay02PartTwo()
+	day02SolvePartTwoStr := strconv.Itoa(day02SolvePartTwo)
+	day02PartTwoOutput := solutionStringBuilder(day02SolvePartTwoStr)
+	fmt.Println(day02StringPartTwo)
+	fmt.Println(day02PartTwoOutput)
+
+
 }
